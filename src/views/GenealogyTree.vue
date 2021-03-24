@@ -10,7 +10,7 @@ export default {
   data() {
     return {};
   },
-  mounted: function() {
+  mounted: function () {
     const chartDom = this.$refs.space;
     const myChart = echarts.init(chartDom);
     let option;
@@ -370,7 +370,7 @@ export default {
                       name: "先峰",
                       children: [
                         {
-                          name: "师",
+                          name: "思",
                           gender: 1,
                           addr: "张家界市慈利县江垭林场",
                           bday: "1992-10"
@@ -389,7 +389,8 @@ export default {
                       ]
                     },
                     {
-                      name: "丽"
+                      name: "先莉",
+                      gender: 2
                     }
                   ]
                 },
@@ -418,7 +419,7 @@ export default {
         tooltip: {
           trigger: "item",
           triggerOn: "mousemove",
-          formatter: function(params) {
+          formatter: function (params) {
             /* 这里 `params.data` 引用的是 `series[0].data[index]`，里面包含着“额外的数据” */
             console.log(params.data);
             var prevPrice = params.data;
