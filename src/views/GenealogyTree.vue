@@ -211,6 +211,11 @@ export default {
                               name: "稳",
                               gender: 1,
                               addr: "张家界市慈利县江垭镇王家坪村"
+                            },
+                            {
+                              name: "沈夏",
+                              gender: 2,
+                              addr: "张家界市慈利县江垭镇王家坪村"
                             }
                           ]
                         },
