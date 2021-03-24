@@ -294,7 +294,7 @@ export default {
                       name: "先峰",
                       children: [
                         {
-                          name: "唐师"
+                          name: "师"
                         }
                       ]
                     },
@@ -302,7 +302,7 @@ export default {
                       name: "先华",
                       children: [
                         {
-                          name: "唐傲"
+                          name: "傲"
                         }
                       ]
                     }
@@ -312,7 +312,7 @@ export default {
                   name: "承月",
                   children: [
                     {
-                      name: "唐庭"
+                      name: "庭"
                     }
                   ]
                 }
@@ -376,6 +376,10 @@ export default {
     );
 
     option && myChart.setOption(option);
+
+    window.addEventListener("resize", () => {
+      myChart.resize();
+    });
   },
   methods: {}
 };
