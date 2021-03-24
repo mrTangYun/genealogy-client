@@ -192,7 +192,7 @@ export default {
               name: "芳森",
               children: [
                 {
-                  name: "承军",
+                  name: "承均",
                   gender: 1,
                   addr: "张家界市慈利县江垭林场",
                   children: [
