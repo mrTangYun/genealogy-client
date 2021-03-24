@@ -538,10 +538,10 @@ export default {
 
             data: [data],
 
-            left: "2%",
-            right: "2%",
-            top: "8%",
-            bottom: "20%",
+            left: "1%",
+            right: "4%",
+            top: "5%",
+            bottom: "4%",
 
             symbol: "emptyCircle",
             symbolSize: 15,
@@ -555,7 +555,7 @@ export default {
               rotate: 0,
               verticalAlign: "middle",
               align: "right",
-              fontSize: 19
+              fontSize: 22
             },
 
             leaves: {
@@ -584,6 +584,9 @@ export default {
       const result = { ...node };
       if (node.gender) {
         result.itemStyle = {
+          color: ["", "blue", "red"][node.gender]
+        };
+        result.lineStyle = {
           color: ["", "blue", "red"][node.gender]
         };
       }
