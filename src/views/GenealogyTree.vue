@@ -403,6 +403,14 @@ export default {
                   ]
                 },
                 {
+                  name: "桃霞",
+                  gender: 2
+                },
+                {
+                  name: "银霞",
+                  gender: 2
+                },
+                {
                   name: "秋霞",
                   gender: 2,
                   addr: "张家界市慈利县江垭镇九溪村",
