@@ -7,7 +7,7 @@ module.exports = {
   },
   publicPath:
     process.env.NODE_ENV === "production"
-      ? "https://mrtangyun.github.io/genealogy-client/"
+      ? "https://github-20735959.gitee.io/genealogy-client/"
       : "./",
   outputDir: "dist", // 输出文件目录
   lintOnSave: false,
