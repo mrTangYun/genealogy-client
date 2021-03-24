@@ -1,5 +1,10 @@
 <template>
-  <div class="user">
+  <div
+    :class="{
+      user: true,
+      sigleChild: user && user.children && user.children.length === 1
+    }"
+  >
     <div v-if="$apollo.loading">loading</div>
     <template v-else>
       <div class="name">
@@ -75,30 +80,32 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+$unitHeight: 0.5em;
 .user {
-  margin: 0.5em 0;
+  margin: $unitHeight 0;
   position: relative;
   &::before {
     content: " ";
     display: flex;
-    height: 0.5em;
+    height: $unitHeight;
     width: 1px;
     background: currentColor;
     left: 50%;
     position: absolute;
-    top: -0.5em;
+    top: -$unitHeight;
   }
 
   &::after {
     content: " ";
     display: block;
     width: 100%;
-    height: 2px;
-    background: red;
+    height: 1px;
+    background: currentColor;
     position: absolute;
-    top: -0.5em;
+    top: -$unitHeight;
     left: 0;
   }
+
   &:first-child {
     margin-left: 0;
     &::after {
@@ -111,25 +118,34 @@ export default {
     &::after {
       width: 50%;
     }
+    &:first-child {
+      &::after {
+        width: 0;
+      }
+    }
   }
 
   .name {
     display: flex;
     justify-content: center;
+    padding: 0 $unitHeight / 3;
     span {
       display: block;
       color: #333;
       border: 1px solid #333;
+      white-space: nowrap;
+      border-radius: 5px;
+      min-width: 4em;
     }
   }
   .children {
     position: relative;
     display: flex;
-    padding-top: 0.5em;
+    padding-top: $unitHeight;
     &::before {
       content: " ";
       display: flex;
-      height: 0.5em;
+      height: $unitHeight;
       width: 1px;
       position: absolute;
       background: currentColor;

@@ -1,142 +1,389 @@
 <template>
-  <div class="home">
-    <template v-if="!$apollo.loading">
-      <div v-for="genealogy in genealogies" :key="genealogy.id">
-        <div v-if="genealogy.topAncestors && genealogy.topAncestors.length">
-          {{ genealogy.firstName }}
-          <div class="children">
-            <User
-              v-for="user in genealogy.topAncestors"
-              :key="user.id"
-              :id="user.id"
-            />
-          </div>
-        </div>
-      </div>
-    </template>
-    <!-- <vue-tree
-      style="width: 800px; height: 600px; border: 1px solid gray;"
-      :dataset="sampleData"
-      :config="treeConfig"
-    >
-      <template v-slot:node="{ node, collapsed }">
-        <div class="tree-node">
-          <span
-            class="main"
-            :style="{ border: collapsed ? '2px solid grey' : '' }"
-            @click="clickNodeHandler(node)"
-            >{{ node.value }}</span
-          >
-          <template v-if="node.mates && node.mates.length">
-            <div
-              class="mate"
-              v-for="mate in node.mates"
-              :key="mate.name"
-              @click.stop="clickNodeHandler2(node)"
-            >
-              {{ mate.name }}
-            </div>
-          </template>
-        </div>
-      </template>
-    </vue-tree> -->
-  </div>
+  <div class="genealogyNode" ref="space"></div>
 </template>
 
 <script>
-import VueTree from "@ssthouse/vue-tree-chart";
-import { v4 as uuidv4 } from "uuid";
 import Vue from "vue";
-import User from "@/components/User.vue";
-import gql from "graphql-tag";
+const echarts = window.echarts;
 export default {
   name: "OrganizationChart",
-  apollo: {
-    // 简单的查询，将更新 'hello' 这个 vue 属性
-    genealogies: gql`
-      query {
-        genealogies {
-          id
-          firstName
-          maxLevel
-          topAncestors {
-            id
-            name
-            gender
-          }
-        }
-      }
-    `
-  },
-  components: {
-    VueTree,
-    User
-  },
+
   data() {
-    return {
-      sampleData: {
-        value: "1",
-        mates: [
-          {
-            name: "唐"
-          }
-        ],
-        children: [
-          { value: "2", children: [{ value: "4" }, { value: "5" }] },
-          { value: "3" }
-        ]
-      },
-      treeConfig: { nodeWidth: 220, nodeHeight: 80, levelHeight: 50 }
-    };
+    return {};
   },
-  methods: {
-    clickNodeHandler(a) {
-      console.log(a);
-    },
-    clickNodeHandler2(a) {
-      console.log({ ...a });
-      this.$set(a.children, a.children.length, {
-        _key: uuidv4(),
-        value: Math.random() * 1000000,
-        _children: null,
-        children: null
-      });
-      // a.children =
-      a.mates[0].name = "hello";
-      // a = {
-      //   ...a,
-      //   children: [...a.children, { _key: uuidv4(), value: "30" }]
-      // };
-      console.log({ ...a });
-      // a.children.push({ value: "30" });
-      // a.children.splice(1, 0, { value: "30" });
-    }
-  }
+  mounted: function() {
+    const chartDom = this.$refs.space;
+    const myChart = echarts.init(chartDom);
+    let option;
+
+    myChart.showLoading();
+
+    var data = {
+      name: "延高",
+      children: [
+        {
+          name: "祚湘",
+          children: [
+            {
+              name: "芳钦",
+              children: [
+                {
+                  name: "承银"
+                },
+                {
+                  name: "承红",
+                  children: [
+                    {
+                      name: "先益",
+                      children: [
+                        {
+                          name: "忠"
+                        },
+                        {
+                          name: "国"
+                        }
+                      ]
+                    },
+                    {
+                      name: "先军"
+                    },
+                    {
+                      name: "先高"
+                    },
+                    {
+                      name: "先云"
+                    }
+                  ]
+                },
+                {
+                  name: "承岩",
+                  children: [
+                    {
+                      name: "先如",
+                      children: [
+                        {
+                          name: "银"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  name: "承培"
+                },
+                {
+                  name: "承吉"
+                }
+              ]
+            },
+            {
+              name: "芳钲",
+              children: [
+                {
+                  name: "承全"
+                }
+              ]
+            },
+            {
+              name: "芳锯",
+              children: [
+                {
+                  name: "承章"
+                }
+              ]
+            },
+            {
+              name: "芳𨥭",
+              children: [
+                {
+                  name: "承山",
+                  children: [
+                    {
+                      name: "先政",
+                      children: [
+                        {
+                          name: "彩"
+                        },
+                        {
+                          name: "繁"
+                        }
+                      ]
+                    },
+                    {
+                      name: "先友",
+                      children: [
+                        {
+                          name: "武"
+                        }
+                      ]
+                    },
+                    {
+                      name: "先爱",
+                      children: [
+                        {
+                          name: "盛"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              name: "芳铬",
+              children: [
+                {
+                  name: "承礼",
+                  children: [
+                    {
+                      name: "先明",
+                      children: [
+                        {
+                          name: "伟"
+                        }
+                      ]
+                    },
+                    {
+                      name: "先政",
+                      children: [
+                        {
+                          name: "志"
+                        }
+                      ]
+                    },
+                    {
+                      name: "先银",
+                      children: [
+                        {
+                          name: "帅"
+                        }
+                      ]
+                    },
+                    {
+                      name: "先浓",
+                      children: [
+                        {
+                          name: "清"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              name: "芳锐",
+              children: [
+                {
+                  name: "承军",
+                  children: [
+                    {
+                      name: "楚昌",
+                      children: [
+                        {
+                          name: "慧耀",
+                          children: [
+                            {
+                              name: "稳"
+                            }
+                          ]
+                        },
+                        {
+                          name: "美玲",
+                          children: [
+                            {
+                              name: "景怡"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      name: "楚兵",
+                      children: [
+                        {
+                          name: "云",
+                          children: [
+                            {
+                              name: "雨轩"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  name: "承满",
+                  children: [
+                    {
+                      name: "先辉",
+                      children: [
+                        {
+                          name: "明浩"
+                        }
+                      ]
+                    },
+                    {
+                      name: "先忠",
+                      children: [
+                        {
+                          name: "经天"
+                        }
+                      ]
+                    },
+                    {
+                      name: "先进",
+                      children: [
+                        {
+                          name: "有芦"
+                        }
+                      ]
+                    },
+                    {
+                      name: "先平",
+                      children: [
+                        {
+                          name: "明远"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              name: "芳钟",
+              children: [
+                {
+                  name: "承初",
+                  children: [
+                    {
+                      name: "先会",
+                      children: [
+                        {
+                          name: "远"
+                        },
+                        {
+                          name: "斌"
+                        }
+                      ]
+                    },
+                    {
+                      name: "桂",
+                      children: [
+                        {
+                          name: "世"
+                        }
+                      ]
+                    },
+                    {
+                      name: "聪",
+                      children: [
+                        {
+                          name: "楚"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  name: "承楚",
+                  children: [
+                    {
+                      name: "先峰",
+                      children: [
+                        {
+                          name: "唐师"
+                        }
+                      ]
+                    },
+                    {
+                      name: "先华",
+                      children: [
+                        {
+                          name: "唐傲"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  name: "承月",
+                  children: [
+                    {
+                      name: "唐庭"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              name: "芳蕃"
+            }
+          ]
+        }
+      ]
+    };
+
+    myChart.hideLoading();
+
+    myChart.setOption(
+      (option = {
+        tooltip: {
+          trigger: "item",
+          triggerOn: "mousemove"
+        },
+        series: [
+          {
+            type: "tree",
+
+            data: [data],
+
+            left: "2%",
+            right: "2%",
+            top: "8%",
+            bottom: "20%",
+
+            symbol: "emptyCircle",
+            symbolSize: 15,
+
+            orient: "vertical",
+
+            expandAndCollapse: true,
+
+            label: {
+              position: "top",
+              rotate: 0,
+              verticalAlign: "middle",
+              align: "right",
+              fontSize: 19
+            },
+
+            leaves: {
+              label: {
+                position: "bottom",
+                rotate: 0,
+                verticalAlign: "middle",
+                align: "left"
+              }
+            },
+
+            animationDurationUpdate: 750
+          }
+        ]
+      })
+    );
+
+    option && myChart.setOption(option);
+  },
+  methods: {}
 };
 </script>
 
 <style lang="scss" scoped>
-.children {
-  display: flex;
-}
-.tree-node {
-  color: blue;
-  display: flex;
-  .main,
-  .mate {
-    background: #fff;
-    height: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .main {
-    border: 1px solid #333;
-  }
-  .mate {
-    color: red;
-    border: 1px solid #333;
-    margin-left: 10px;
-  }
+.genealogyNode {
+  height: 100vh;
+  // background: red;
 }
 </style>
