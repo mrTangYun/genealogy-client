@@ -19,26 +19,26 @@ export default {
     myChart.showLoading();
 
     const data_origin = {
-      name: "延高",
+      name: "唐延高",
       gender: 1,
       children: [
         {
-          name: "祚春",
+          name: "唐祚春",
           gender: 1,
           children: [
             {
-              name: "芳懿",
+              name: "唐芳懿",
               gender: 1,
               addr: "张家界市慈利县熊家庄灰塘坪",
               children: [
                 {
-                  name: "承洪",
+                  name: "唐承洪",
                   isDead: true,
                   addr: "张家界市慈利县熊家庄灰塘坪",
                   gender: 1,
                   children: [
                     {
-                      name: "仁兰",
+                      name: "唐仁兰",
                       gender: 2,
                       addr: "张家界市慈利县熊家庄折岩",
                       mate: {
@@ -48,12 +48,12 @@ export default {
                   ]
                 },
                 {
-                  name: "承贵",
+                  name: "唐承贵",
                   gender: 1,
                   addr: "张家界市慈利县熊家庄灰塘坪",
                   children: [
                     {
-                      name: "先云",
+                      name: "唐先云",
                       gender: 1,
                       addr: "张家界市慈利县熊家庄灰塘坪",
                       bday: "1962-12",
@@ -62,17 +62,17 @@ export default {
                       },
                       children: [
                         {
-                          name: "斌",
+                          name: "唐斌",
                           gender: 1
                         },
                         {
-                          name: "琳",
+                          name: "唐琳",
                           gender: 2
                         }
                       ]
                     },
                     {
-                      name: "先春",
+                      name: "唐先春",
                       gender: 2,
                       addr: "甘堰川石",
                       mate: {
@@ -80,7 +80,7 @@ export default {
                       }
                     },
                     {
-                      name: "先浓",
+                      name: "唐先浓",
                       gender: 2,
                       mate: {
                         name: "王恩来"
@@ -93,24 +93,24 @@ export default {
           ]
         },
         {
-          name: "祚贵",
+          name: "唐祚贵",
           gender: 1,
           children: [
             {
-              name: "芳培",
+              name: "唐芳培",
               gender: 1,
               addr: "枣树坡",
               bday: "1892",
               children: [
                 {
-                  name: "承发",
+                  name: "唐承发",
                   gender: 1,
                   addr: "灰塘坪唐家溶学堂湾",
                   isDead: true,
                   bday: "1917",
                   children: [
                     {
-                      name: "先宝",
+                      name: "唐先宝",
                       gender: 1,
                       addr: "关塌",
                       bday: "1940-12",
@@ -119,7 +119,7 @@ export default {
                       },
                       children: [
                         {
-                          name: "汇勇",
+                          name: "唐汇勇",
                           gender: 1,
                           addr: "关塌",
                           bday: "1971-10",
@@ -128,20 +128,20 @@ export default {
                           }
                         },
                         {
-                          name: "汇云",
+                          name: "唐汇云",
                           gender: 2,
                           mate: {
                             name: "李双生"
                           }
                         },
                         {
-                          name: "汇霞",
+                          name: "唐汇霞",
                           gender: 2
                         }
                       ]
                     },
                     {
-                      name: "先池",
+                      name: "唐先池",
                       gender: 1,
                       isDead: true,
                       mate: {
@@ -149,13 +149,13 @@ export default {
                       },
                       children: [
                         {
-                          name: "汇祥",
+                          name: "唐汇祥",
                           gender: 1,
                           bday: "1973-09",
                           addr: "熊家庄灰塘坪"
                         },
                         {
-                          name: "汇军",
+                          name: "唐汇军",
                           gender: 1,
                           bday: "1975-08",
                           addr: "熊家庄灰塘坪",
@@ -164,7 +164,7 @@ export default {
                           }
                         },
                         {
-                          name: "汇浓",
+                          name: "唐汇浓",
                           gender: 2,
                           bday: "1970-08-25",
                           addr: "常德汉寿县西巷"
@@ -172,14 +172,14 @@ export default {
                       ]
                     },
                     {
-                      name: "金妹",
+                      name: "唐金妹",
                       gender: 2,
                       mate: {
                         name: "杜芳聪"
                       }
                     },
                     {
-                      name: "菊妹",
+                      name: "唐菊妹",
                       gender: 2,
                       mate: {
                         name: "李先猛"
@@ -191,122 +191,39 @@ export default {
             }
           ]
         },
+        
         {
-          name: "祚奎",
+          name: "唐祚湘",
           gender: 1,
           children: [
             {
-              name: "芳新",
-              gender: 1,
-              bday: "1930-10",
-              dday: "1980-06",
-              isDead: true
-            }
-          ]
-        },
-        {
-          name: "祚炳",
-          gender: 1,
-          children: [
-            {
-              name: "芳为",
-              gender: 1,
-              addr: "张家界市慈利县官塌",
-              bday: "1942-01",
-              children: [
-                {
-                  name: "林",
-                  gender: 1,
-                  children: [
-                    {
-                      name: "楚娟",
-                      gender: 2,
-                      addr: "张家界市",
-                      bday: "1996-01-04"
-                    },
-                    {
-                      name: "睿龙",
-                      gender: 1,
-                      addr: "张家界市",
-                      bday: "2002-08-15"
-                    }
-                  ]
-                },
-                {
-                  name: "刚",
-                  gender: 1,
-                  children: [
-                    {
-                      name: "定",
-                      gender: 1,
-                      addr: "株洲市",
-                      bday: "1995-01-11"
-                    }
-                  ]
-                },
-                {
-                  name: "梓",
-                  gender: 1,
-                  children: [
-                    {
-                      name: "忠",
-                      gender: 1,
-                      addr: "大庆市"
-                    }
-                  ]
-                },
-                {
-                  name: "森",
-                  gender: 1,
-                  children: [
-                    {
-                      name: "源",
-                      gender: 1,
-                      addr: "张家界市",
-                      bday: "2002-06-28"
-                    }
-                  ]
-                },
-                {
-                  name: "金",
-                  gender: 2
-                }
-              ]
-            }
-          ]
-        },
-        {
-          name: "祚湘",
-          gender: 1,
-          children: [
-            {
-              name: "芳钦",
+              name: "唐芳钦",
               gender: 1,
               children: [
                 {
-                  name: "承银",
+                  name: "唐承银",
                   gender: 1
                 },
                 {
-                  name: "承红",
+                  name: "唐承红",
                   gender: 1,
 
                   children: [
                     {
-                      name: "先益",
+                      name: "唐先益",
                       gender: 1,
                       mate: {
                         name: "庹春梅"
                       },
                       children: [
                         {
-                          name: "汇忠",
+                          name: "唐汇忠",
                           gender: 1,
                           addr: "张家界市慈利县零阳镇",
                           bday: "1973-09-10"
                         },
                         {
-                          name: "汇国",
+                          name: "唐汇国",
                           gender: 1,
                           addr: "张家界市慈利县零阳镇",
                           bday: "1975-08-24"
@@ -314,25 +231,25 @@ export default {
                       ]
                     },
                     {
-                      name: "先军",
+                      name: "唐先军",
                       gender: 1
                     },
                     {
-                      name: "先高",
+                      name: "唐先高",
                       gender: 1
                     },
                     {
-                      name: "先云",
+                      name: "唐先云",
                       gender: 1,
                       children: [
                         {
-                          name: "汇斌",
+                          name: "唐汇斌",
                           gender: 1,
                           addr: "张家界市慈利县江垭镇灰塘坪",
                           bday: "1985-04"
                         },
                         {
-                          name: "汇琳",
+                          name: "唐汇琳",
                           gender: 2,
                           addr: "张家界市慈利县江垭镇灰塘坪",
                           bday: "1987-03"
@@ -340,22 +257,22 @@ export default {
                       ]
                     },
                     {
-                      name: "先枚",
+                      name: "唐先枚",
                       gender: 2
                     },
                     {
-                      name: "先菊",
+                      name: "唐先菊",
                       gender: 2
                     }
                   ]
                 },
                 {
-                  name: "承岩",
+                  name: "唐承岩",
                   gender: 1,
                   isDead: true,
                   children: [
                     {
-                      name: "先如",
+                      name: "唐先如",
                       gender: 1,
                       mate: {
                         name: "徐八妹"
@@ -363,7 +280,7 @@ export default {
                       addr: "江垭镇九里垭",
                       children: [
                         {
-                          name: "银银",
+                          name: "唐银银",
                           gender: 2,
                           bday: "1989-12",
                           addr: "江垭镇九里垭"
@@ -373,47 +290,47 @@ export default {
                   ]
                 },
                 {
-                  name: "承培",
+                  name: "唐承培",
                   gender: 1
                 },
                 {
-                  name: "承吉",
+                  name: "唐承吉",
                   gender: 1
                 }
               ]
             },
             {
-              name: "芳钲",
+              name: "唐芳钲",
               gender: 1,
               children: [
                 {
-                  name: "承全",
+                  name: "唐承全",
                   gender: 1
                 }
               ]
             },
             {
-              name: "芳锯",
+              name: "唐芳锯",
               gender: 1,
               children: [
                 {
-                  name: "承章",
+                  name: "唐承章",
                   gender: 1
                 }
               ]
             },
             {
-              name: "芳𨥭",
+              name: "唐芳𨥭",
               gender: 1,
               isDead: true,
               children: [
                 {
-                  name: "承山",
+                  name: "唐承山",
                   gender: 1,
                   isDead: true,
                   children: [
                     {
-                      name: "先政",
+                      name: "唐先政",
                       gender: 1,
                       bday: "1951-09",
                       mate: {
@@ -422,7 +339,7 @@ export default {
                       addr: "赵家岗",
                       children: [
                         {
-                          name: "彩云",
+                          name: "唐彩云",
                           gender: 2,
                           bday: "1974-11",
                           addr: "赵家岗双河村",
@@ -435,7 +352,7 @@ export default {
                           ]
                         },
                         {
-                          name: "繁云",
+                          name: "唐繁云",
                           gender: 2,
                           bday: "1976-11",
                           addr: "赵家岗双河村",
@@ -453,7 +370,7 @@ export default {
                       ]
                     },
                     {
-                      name: "先友",
+                      name: "唐先友",
                       gender: 1,
                       bday: "1962-08",
                       mate: {
@@ -461,18 +378,18 @@ export default {
                       },
                       children: [
                         {
-                          name: "汇武",
+                          name: "唐汇武",
                           gender: 1,
                           addr: "赵家岗双河村"
                         },
                         {
-                          name: "汇媛",
+                          name: "唐汇媛",
                           gender: 2
                         }
                       ]
                     },
                     {
-                      name: "先爱",
+                      name: "唐先爱",
                       gender: 1,
                       bday: "1968-08",
                       mate: {
@@ -480,13 +397,13 @@ export default {
                       },
                       children: [
                         {
-                          name: "汇盛",
+                          name: "唐汇盛",
                           gender: 1,
                           bday: "1995-08",
                           addr: "赵家岗双河村"
                         },
                         {
-                          name: "琴",
+                          name: "唐琴",
                           gender: 2,
                           bday: "2003-11-01",
                           addr: "赵家岗双河村"
@@ -494,7 +411,7 @@ export default {
                       ]
                     },
                     {
-                      name: "先泽",
+                      name: "唐先泽",
                       gender: 2,
                       mate: {
                         name: "赵新建"
@@ -504,26 +421,26 @@ export default {
                   ]
                 },
                 {
-                  name: "金霞",
+                  name: "唐金霞",
                   gender: 2,
                   addr: "赵家岗金坪村"
                 }
               ]
             },
             {
-              name: "芳铬",
+              name: "唐芳铬",
               gender: 1,
               isDead: true,
               addr: "江垭大湾",
               children: [
                 {
-                  name: "承礼",
+                  name: "唐承礼",
                   gender: 1,
                   isDead: true,
 
                   children: [
                     {
-                      name: "先明",
+                      name: "唐先明",
                       gender: 1,
                       mate: {
                         name: "杨春浓"
@@ -532,22 +449,22 @@ export default {
                       addr: "江垭五里堆二湾",
                       children: [
                         {
-                          name: "伟",
+                          name: "唐伟",
                           gender: 1,
                           addr: "江垭五里堆三湾"
                         },
                         {
-                          name: "俊",
+                          name: "唐俊",
                           gender: 2
                         },
                         {
-                          name: "英",
+                          name: "唐英",
                           gender: 2
                         }
                       ]
                     },
                     {
-                      name: "先政",
+                      name: "唐先政",
                       gender: 1,
                       mate: {
                         name: "杜佳浓"
@@ -556,7 +473,7 @@ export default {
                       bday: "1964-11",
                       children: [
                         {
-                          name: "汇志",
+                          name: "唐汇志",
                           gender: 1,
                           addr: "江垭五里堆三湾",
                           bday: "1993-09"
@@ -564,13 +481,13 @@ export default {
                       ]
                     },
                     {
-                      name: "先银",
+                      name: "唐先银",
                       gender: 1,
                       addr: "江垭五里堆三湾",
                       bday: "1969-11",
                       children: [
                         {
-                          name: "帅",
+                          name: "唐帅",
                           gender: 1,
                           addr: "江垭五里堆三湾",
                           bday: "1993-09"
@@ -578,7 +495,7 @@ export default {
                       ]
                     },
                     {
-                      name: "秀年",
+                      name: "唐秀年",
                       gender: 2,
                       mate: {
                         name: "许昌和"
@@ -586,13 +503,13 @@ export default {
                       addr: "慈利县江垭镇东河街"
                     },
                     {
-                      name: "先浓",
+                      name: "唐先浓",
                       gender: 2,
                       bday: "1962-05-15",
                       addr: "慈利县",
                       children: [
                         {
-                          name: "楠清",
+                          name: "唐楠清",
                           bday: "1986-01-05",
                           gender: 1,
                           addr: "慈利县"
@@ -602,26 +519,26 @@ export default {
                   ]
                 },
                 {
-                  name: "冬翠",
+                  name: "唐冬翠",
                   gender: 2,
                   addr: "官塌"
                 }
               ]
             },
             {
-              name: "芳森",
+              name: "唐芳森",
               gender: 1,
               isDead: true,
               children: [
                 {
-                  name: "承均",
+                  name: "唐承均",
                   gender: 1,
                   isDead: true,
                   bday: "1929",
                   addr: "张家界市慈利县江垭林场",
                   children: [
                     {
-                      name: "楚昌",
+                      name: "唐楚昌",
                       gender: 1,
                       bday: "1952-11",
                       addr: "张家界市慈利县零阳镇文化路御景中央",
@@ -630,13 +547,13 @@ export default {
                       },
                       children: [
                         {
-                          name: "慧耀",
+                          name: "唐慧耀",
                           bday: "1980-10",
                           gender: 2,
                           addr: "张家界市慈利县江垭镇王家坪村",
                           children: [
                             {
-                              name: "稳",
+                              name: "唐稳",
                               gender: 1,
                               addr: "张家界市慈利县江垭镇王家坪村"
                             },
@@ -648,13 +565,13 @@ export default {
                           ]
                         },
                         {
-                          name: "美玲",
+                          name: "唐美玲",
                           bday: "1982-09",
                           gender: 2,
                           addr: "张家界市慈利县岩泊渡",
                           children: [
                             {
-                              name: "景怡",
+                              name: "唐景怡",
                               gender: 2
                             }
                           ]
@@ -662,7 +579,7 @@ export default {
                       ]
                     },
                     {
-                      name: "楚兵",
+                      name: "唐楚兵",
                       gender: 1,
                       addr: "张家界市慈利县江垭林场",
                       bday: "1956-12",
@@ -671,13 +588,13 @@ export default {
                       },
                       children: [
                         {
-                          name: "云",
+                          name: "唐云",
                           bday: "1984-03",
                           gender: 1,
                           addr: "张家界市慈利县江垭林场",
                           children: [
                             {
-                              name: "雨轩",
+                              name: "唐雨轩",
                               bday: "2015-01",
                               gender: 1,
                               addr: "张家界市慈利县江垭林场"
@@ -689,7 +606,7 @@ export default {
                   ]
                 },
                 {
-                  name: "承满",
+                  name: "唐承满",
                   gender: 1,
                   bday: "1943-08",
                   isDead: true,
@@ -697,7 +614,7 @@ export default {
 
                   children: [
                     {
-                      name: "先辉",
+                      name: "唐先辉",
                       gender: 1,
                       bday: "1963-09",
                       addr: "张家界市慈利县铁路段",
@@ -706,20 +623,20 @@ export default {
                       },
                       children: [
                         {
-                          name: "明浩",
+                          name: "唐明浩",
                           bday: "1989-12",
                           gender: 1
                         }
                       ]
                     },
                     {
-                      name: "先忠",
+                      name: "唐先忠",
                       gender: 1,
                       bday: "1968-04",
                       addr: "张家界市慈利县江垭林场",
                       children: [
                         {
-                          name: "经天",
+                          name: "唐经天",
                           gender: 1,
                           addr: "张家界市慈利县江垭林场",
                           bday: "1996-03"
@@ -727,7 +644,7 @@ export default {
                       ]
                     },
                     {
-                      name: "先进",
+                      name: "唐先进",
                       gender: 1,
                       bday: "1970-04",
                       addr: "张家界市慈利县",
@@ -736,7 +653,7 @@ export default {
                       },
                       children: [
                         {
-                          name: "有庐",
+                          name: "唐有庐",
                           gender: 1,
                           bday: "2001-10",
                           addr: "张家界市慈利县"
@@ -744,13 +661,13 @@ export default {
                       ]
                     },
                     {
-                      name: "先平",
+                      name: "唐先平",
                       gender: 1,
                       addr: "张家界市慈利县江垭林场",
                       bday: "1972-07",
                       children: [
                         {
-                          name: "明远",
+                          name: "唐明远",
                           gender: 1,
                           addr: "张家界市慈利县江垭林场",
                           bday: "1998-08"
@@ -762,19 +679,19 @@ export default {
               ]
             },
             {
-              name: "芳钟",
+              name: "唐芳钟",
               gender: 1,
               isDead: true,
               addr: "江垭大湾",
               children: [
                 {
-                  name: "承初",
+                  name: "唐承初",
                   gender: 1,
                   addr: "江垭五里堆",
                   bday: "1939-10",
                   children: [
                     {
-                      name: "先会",
+                      name: "唐先会",
                       gender: 1,
                       bday: "1962",
                       mate: {
@@ -782,13 +699,13 @@ export default {
                       },
                       children: [
                         {
-                          name: "远",
+                          name: "唐远",
                           gender: 1,
                           addr: "张家界市慈利县江垭镇五里堆三湾",
                           bday: "1988-08"
                         },
                         {
-                          name: "斌",
+                          name: "唐斌",
                           gender: 1,
                           addr: "张家界市慈利县江垭镇五里堆三湾",
                           bday: "1990-05-26"
@@ -796,7 +713,7 @@ export default {
                       ]
                     },
                     {
-                      name: "先桂",
+                      name: "唐先桂",
                       gender: 1,
                       addr: "张家界市慈利县江垭镇九溪村",
                       bday: "1967-10",
@@ -805,7 +722,7 @@ export default {
                       },
                       children: [
                         {
-                          name: "世",
+                          name: "唐世",
                           gender: 2,
                           bday: "1993-08",
                           addr: "张家界市慈利县江垭镇九溪村"
@@ -813,7 +730,7 @@ export default {
                       ]
                     },
                     {
-                      name: "先聪",
+                      name: "唐先聪",
                       gender: 1,
                       addr: "江苏淮阴市工学院",
                       mate: {
@@ -821,7 +738,7 @@ export default {
                       },
                       children: [
                         {
-                          name: "楚",
+                          name: "唐楚",
                           gender: 2,
                           bday: "1999-07-11",
                           addr: "江苏"
@@ -829,7 +746,7 @@ export default {
                       ]
                     },
                     {
-                      name: "先香",
+                      name: "唐先香",
                       gender: 2,
                       addr: "常德市汉寿",
                       mate: {
@@ -837,7 +754,7 @@ export default {
                       }
                     },
                     {
-                      name: "美林",
+                      name: "唐美林",
                       gender: 2,
                       mate: {
                         name: "金求成"
@@ -847,13 +764,13 @@ export default {
                   ]
                 },
                 {
-                  name: "承楚",
+                  name: "唐承楚",
                   gender: 1,
                   addr: "张家界市慈利县江垭林场",
                   bday: "1942-07",
                   children: [
                     {
-                      name: "先峰",
+                      name: "唐先峰",
                       gender: 1,
                       addr: "张家界市慈利县江垭林场",
                       mate: {
@@ -862,7 +779,7 @@ export default {
                       bday: "1966-06",
                       children: [
                         {
-                          name: "思",
+                          name: "唐思",
                           gender: 1,
                           addr: "张家界市慈利县江垭林场",
                           bday: "1992-10"
@@ -870,7 +787,7 @@ export default {
                       ]
                     },
                     {
-                      name: "先华",
+                      name: "唐先华",
                       gender: 1,
                       addr: "张家界市慈利县江垭林场",
                       mate: {
@@ -879,7 +796,7 @@ export default {
                       bday: "1969-10",
                       children: [
                         {
-                          name: "傲",
+                          name: "唐傲",
                           gender: 1,
                           addr: "张家界市慈利县江垭林场",
                           bday: "1994-06"
@@ -887,7 +804,7 @@ export default {
                       ]
                     },
                     {
-                      name: "先莉",
+                      name: "唐先莉",
                       gender: 2,
                       mate: {
                         name: "杨雨铣"
@@ -896,13 +813,13 @@ export default {
                   ]
                 },
                 {
-                  name: "承月",
+                  name: "唐承月",
                   gender: 1,
                   addr: "张家界市慈利县江垭五里堆三湾",
                   bday: "1949-08",
                   children: [
                     {
-                      name: "庭",
+                      name: "唐庭",
                       gender: 1,
                       addr: "张家界市慈利县江垭五里堆三湾",
                       bday: "1990-06-05"
@@ -910,7 +827,7 @@ export default {
                   ]
                 },
                 {
-                  name: "桃霞",
+                  name: "唐桃霞",
                   addr: "张家界市慈利县江垭",
                   gender: 2,
                   children: [
@@ -925,7 +842,7 @@ export default {
                   ]
                 },
                 {
-                  name: "银霞",
+                  name: "唐银霞",
                   gender: 2,
                   children: [
                     {
@@ -943,7 +860,7 @@ export default {
                   ]
                 },
                 {
-                  name: "秋霞",
+                  name: "唐秋霞",
                   gender: 2,
                   addr: "张家界市慈利县江垭镇九溪村",
                   children: [
@@ -962,11 +879,95 @@ export default {
               ]
             },
             {
-              name: "芳蕃",
+              name: "唐芳蕃",
               gender: 1
             }
           ]
-        }
+        },
+        {
+          name: "唐祚奎",
+          gender: 1,
+          children: [
+            {
+              name: "唐芳新",
+              gender: 1,
+              bday: "1930-10",
+              dday: "1980-06",
+              isDead: true
+            }
+          ]
+        },
+        {
+          name: "唐祚炳",
+          gender: 1,
+          children: [
+            {
+              name: "唐芳为",
+              gender: 1,
+              addr: "张家界市慈利县官塌",
+              bday: "1942-01",
+              children: [
+                {
+                  name: "唐林",
+                  gender: 1,
+                  children: [
+                    {
+                      name: "唐楚娟",
+                      gender: 2,
+                      addr: "张家界市",
+                      bday: "1996-01-04"
+                    },
+                    {
+                      name: "唐睿龙",
+                      gender: 1,
+                      addr: "张家界市",
+                      bday: "2002-08-15"
+                    }
+                  ]
+                },
+                {
+                  name: "唐刚",
+                  gender: 1,
+                  children: [
+                    {
+                      name: "唐定",
+                      gender: 1,
+                      addr: "株洲市",
+                      bday: "1995-01-11"
+                    }
+                  ]
+                },
+                {
+                  name: "唐梓",
+                  gender: 1,
+                  children: [
+                    {
+                      name: "唐忠",
+                      gender: 1,
+                      addr: "大庆市"
+                    }
+                  ]
+                },
+                {
+                  name: "唐森",
+                  gender: 1,
+                  children: [
+                    {
+                      name: "唐源",
+                      gender: 1,
+                      addr: "张家界市",
+                      bday: "2002-06-28"
+                    }
+                  ]
+                },
+                {
+                  name: "唐金",
+                  gender: 2
+                }
+              ]
+            }
+          ]
+        },
       ]
     };
 
@@ -976,23 +977,32 @@ export default {
 
     myChart.setOption(
       (option = {
+        label: {
+          formatter: function (params) {
+            /* 这里 `params.data` 引用的是 `series[0].data[index]`，里面包含着“额外的数据” */
+            // console.log(params.data.name);
+            return params.data.name.replace('唐', '');
+          }
+        },
         tooltip: {
           position: [0, 0],
           padding: 2,
           trigger: "item",
           triggerOn: "mousemove",
+
           formatter: function (params) {
             /* 这里 `params.data` 引用的是 `series[0].data[index]`，里面包含着“额外的数据” */
             console.log(params.data);
             // addr: "张家界市慈利县江垭镇灰塘坪",
             //               bday
-            const { addr, bday } = params.data;
+            const { name, mate, addr, bday } = params.data;
             const result = [];
+            result.push(name+ (bday ? (' ' +dayjs(new dayjs()).diff(bday, "y") + "岁") : ''));
             if (addr) {
-              result.push(addr);
+              result.push(addr );
             }
-            if (bday) {
-              result.push("年龄: " + dayjs(new dayjs()).diff(bday, "y") + "岁");
+            if (mate) {
+              result.push("配偶: " + mate.name);
             }
             // var prevPrice = params.data;
             return result.join("<br />");
