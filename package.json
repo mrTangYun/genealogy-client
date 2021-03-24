@@ -2,6 +2,7 @@
   "name": "genealogy_tang",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mrtangyun.github.io/genealogy-client",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

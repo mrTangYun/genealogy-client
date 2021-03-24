@@ -5,7 +5,10 @@ module.exports = {
     host: "0.0.0.0",
     disableHostCheck: true
   },
-  publicPath: "./", // 基本路径
+  publicPath:
+    process.env.NODE_ENV === "production"
+      ? "https://mrtangyun.github.io/genealogy-client/"
+      : "./",
   outputDir: "dist", // 输出文件目录
   lintOnSave: false,
   configureWebpack: config => {
