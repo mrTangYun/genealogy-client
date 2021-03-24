@@ -19,6 +19,7 @@ export default {
 
     var data = {
       name: "延高",
+
       children: [
         {
           name: "祚湘",
@@ -50,7 +51,21 @@ export default {
                       name: "先高"
                     },
                     {
-                      name: "先云"
+                      name: "先云",
+                      children: [
+                        {
+                          name: "汇斌",
+                          gender: 1,
+                          addr: "张家界市慈利县江垭镇灰塘坪",
+                          bday: "1985-04"
+                        },
+                        {
+                          name: "汇琳",
+                          gender: 2,
+                          addr: "张家界市慈利县江垭镇灰塘坪",
+                          bday: "1987-03"
+                        }
+                      ]
                     }
                   ]
                 },
@@ -162,7 +177,10 @@ export default {
                       name: "先浓",
                       children: [
                         {
-                          name: "清"
+                          name: "楠清",
+                          bday: "1986-01-05",
+                          gender: 1,
+                          addr: "慈利县"
                         }
                       ]
                     }
@@ -175,23 +193,36 @@ export default {
               children: [
                 {
                   name: "承军",
+                  gender: 1,
+                  addr: "张家界市慈利县江垭林场",
                   children: [
                     {
                       name: "楚昌",
+                      gender: 1,
+                      addr: "张家界市慈利县零阳镇文化路御景中央",
                       children: [
                         {
                           name: "慧耀",
+                          bday: "1980-10",
+                          gender: 2,
+                          addr: "张家界市慈利县江垭镇王家坪村",
                           children: [
                             {
-                              name: "稳"
+                              name: "稳",
+                              gender: 1,
+                              addr: "张家界市慈利县江垭镇王家坪村"
                             }
                           ]
                         },
                         {
                           name: "美玲",
+                          bday: "1982-09",
+                          gender: 2,
+                          addr: "张家界市慈利县岩泊渡",
                           children: [
                             {
-                              name: "景怡"
+                              name: "景怡",
+                              gender: 2
                             }
                           ]
                         }
@@ -199,12 +230,20 @@ export default {
                     },
                     {
                       name: "楚兵",
+                      gender: 1,
+                      addr: "张家界市慈利县江垭林场",
                       children: [
                         {
                           name: "云",
+                          bday: "1982-03",
+                          gender: 1,
+                          addr: "张家界市慈利县江垭林场",
                           children: [
                             {
-                              name: "雨轩"
+                              name: "雨轩",
+                              bday: "2015-01",
+                              gender: 1,
+                              addr: "张家界市慈利县江垭林场"
                             }
                           ]
                         }
@@ -214,36 +253,54 @@ export default {
                 },
                 {
                   name: "承满",
+                  gender: 1,
+                  addr: "张家界市慈利县江垭林场",
                   children: [
                     {
                       name: "先辉",
+                      gender: 1,
                       children: [
                         {
-                          name: "明浩"
+                          name: "明浩",
+                          bday: "1989-12",
+                          gender: 1
                         }
                       ]
                     },
                     {
                       name: "先忠",
+                      gender: 1,
+                      addr: "张家界市慈利县江垭林场",
                       children: [
                         {
-                          name: "经天"
+                          name: "经天",
+                          gender: 1,
+                          addr: "张家界市慈利县江垭林场",
+                          bday: "1996-03"
                         }
                       ]
                     },
                     {
                       name: "先进",
+                      gender: 1,
                       children: [
                         {
-                          name: "有芦"
+                          name: "有芦",
+                          gender: 1,
+                          bday: "2001-10"
                         }
                       ]
                     },
                     {
                       name: "先平",
+                      gender: 1,
+                      addr: "张家界市慈利县江垭林场",
                       children: [
                         {
-                          name: "明远"
+                          name: "明远",
+                          gender: 1,
+                          addr: "张家界市慈利县江垭林场",
+                          bday: "1998-08"
                         }
                       ]
                     }
@@ -261,18 +318,29 @@ export default {
                       name: "先会",
                       children: [
                         {
-                          name: "远"
+                          name: "远",
+                          gender: 1,
+                          addr: "张家界市慈利县江垭镇五里堆三湾",
+                          bday: "1988-08"
                         },
                         {
-                          name: "斌"
+                          name: "斌",
+                          gender: 1,
+                          addr: "张家界市慈利县江垭镇五里堆三湾",
+                          bday: "1990-05-26"
                         }
                       ]
                     },
                     {
                       name: "先桂",
+                      gender: 1,
+                      addr: "张家界市慈利县江垭镇九溪村",
                       children: [
                         {
-                          name: "世"
+                          name: "世",
+                          gender: 2,
+                          bday: "1993-08",
+                          addr: "张家界市慈利县江垭镇九溪村"
                         }
                       ]
                     },
@@ -280,7 +348,10 @@ export default {
                       name: "先聪",
                       children: [
                         {
-                          name: "楚"
+                          name: "楚",
+                          gender: 2,
+                          bday: "1999-07-11",
+                          addr: "江苏"
                         }
                       ]
                     },
@@ -299,7 +370,10 @@ export default {
                       name: "先峰",
                       children: [
                         {
-                          name: "师"
+                          name: "师",
+                          gender: 1,
+                          addr: "张家界市慈利县江垭林场",
+                          bday: "1992-10"
                         }
                       ]
                     },
@@ -307,7 +381,10 @@ export default {
                       name: "先华",
                       children: [
                         {
-                          name: "傲"
+                          name: "傲",
+                          gender: 1,
+                          addr: "张家界市慈利县江垭林场",
+                          bday: "1994-06"
                         }
                       ]
                     },
@@ -340,7 +417,12 @@ export default {
       (option = {
         tooltip: {
           trigger: "item",
-          triggerOn: "mousemove"
+          triggerOn: "mousemove",
+          formatter: function(params) {
+            /* 这里 `params.data` 引用的是 `series[0].data[index]`，里面包含着“额外的数据” */
+            console.log(params.data);
+            var prevPrice = params.data;
+          }
         },
         series: [
           {
