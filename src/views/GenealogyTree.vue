@@ -310,6 +310,9 @@ export default {
                           name: "傲"
                         }
                       ]
+                    },
+                    {
+                      name: "丽"
                     }
                   ]
                 },
