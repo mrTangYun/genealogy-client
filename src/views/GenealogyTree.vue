@@ -17,41 +17,51 @@ export default {
 
     myChart.showLoading();
 
-    var data = {
+    const data_origin = {
       name: "延高",
-
+      gender: 1,
       children: [
         {
           name: "祚湘",
+          gender: 1,
           children: [
             {
               name: "芳钦",
+              gender: 1,
               children: [
                 {
-                  name: "承银"
+                  name: "承银",
+                  gender: 1
                 },
                 {
                   name: "承红",
+                  gender: 1,
                   children: [
                     {
                       name: "先益",
+                      gender: 1,
                       children: [
                         {
-                          name: "忠"
+                          name: "忠",
+                          gender: 1
                         },
                         {
-                          name: "国"
+                          name: "国",
+                          gender: 1
                         }
                       ]
                     },
                     {
-                      name: "先军"
+                      name: "先军",
+                      gender: 1
                     },
                     {
-                      name: "先高"
+                      name: "先高",
+                      gender: 1
                     },
                     {
                       name: "先云",
+                      gender: 1,
                       children: [
                         {
                           name: "汇斌",
@@ -71,71 +81,89 @@ export default {
                 },
                 {
                   name: "承岩",
+                  gender: 1,
                   children: [
                     {
                       name: "先如",
+                      gender: 1,
                       children: [
                         {
-                          name: "银"
+                          name: "银",
+                          gender: 1
                         }
                       ]
                     }
                   ]
                 },
                 {
-                  name: "承培"
+                  name: "承培",
+                  gender: 1
                 },
                 {
-                  name: "承吉"
+                  name: "承吉",
+                  gender: 1
                 }
               ]
             },
             {
               name: "芳钲",
+              gender: 1,
               children: [
                 {
-                  name: "承全"
+                  name: "承全",
+                  gender: 1
                 }
               ]
             },
             {
               name: "芳锯",
+              gender: 1,
               children: [
                 {
-                  name: "承章"
+                  name: "承章",
+                  gender: 1
                 }
               ]
             },
             {
               name: "芳𨥭",
+              gender: 1,
               children: [
                 {
                   name: "承山",
+                  gender: 1,
                   children: [
                     {
                       name: "先政",
+                      gender: 1,
                       children: [
                         {
-                          name: "彩"
+                          name: "彩",
+                          gender: 1
                         },
                         {
-                          name: "繁"
+                          name: "繁",
+                          gender: 1
                         }
                       ]
                     },
                     {
                       name: "先友",
+                      gender: 1,
                       children: [
                         {
-                          name: "武"
+                          name: "武",
+                          gender: 1
                         }
                       ]
                     },
                     {
                       name: "先爱",
+                      gender: 1,
                       children: [
                         {
-                          name: "盛"
+                          name: "盛",
+                          gender: 1
                         }
                       ]
                     }
@@ -145,36 +173,45 @@ export default {
             },
             {
               name: "芳铬",
+              gender: 1,
               children: [
                 {
                   name: "承礼",
+                  gender: 1,
                   children: [
                     {
                       name: "先明",
+                      gender: 1,
                       children: [
                         {
-                          name: "伟"
+                          name: "伟",
+                          gender: 1
                         }
                       ]
                     },
                     {
                       name: "先政",
+                      gender: 1,
                       children: [
                         {
-                          name: "志"
+                          name: "志",
+                          gender: 1
                         }
                       ]
                     },
                     {
                       name: "先银",
+                      gender: 1,
                       children: [
                         {
-                          name: "帅"
+                          name: "帅",
+                          gender: 1
                         }
                       ]
                     },
                     {
                       name: "先浓",
+                      gender: 1,
                       children: [
                         {
                           name: "楠清",
@@ -190,6 +227,7 @@ export default {
             },
             {
               name: "芳森",
+              gender: 1,
               children: [
                 {
                   name: "承均",
@@ -315,12 +353,15 @@ export default {
             },
             {
               name: "芳钟",
+              gender: 1,
               children: [
                 {
                   name: "承初",
+                  gender: 1,
                   children: [
                     {
                       name: "先会",
+                      gender: 1,
                       children: [
                         {
                           name: "远",
@@ -351,6 +392,7 @@ export default {
                     },
                     {
                       name: "先聪",
+                      gender: 1,
                       children: [
                         {
                           name: "楚",
@@ -361,18 +403,23 @@ export default {
                       ]
                     },
                     {
-                      name: "先香"
+                      name: "先香",
+                      gender: 2
                     },
                     {
-                      name: "美林"
+                      name: "美林",
+                      gender: 2
                     }
                   ]
                 },
                 {
                   name: "承楚",
+                  gender: 1,
                   children: [
                     {
                       name: "先峰",
+                      gender: 1,
+                      addr: "张家界市慈利县江垭林场",
                       children: [
                         {
                           name: "思",
@@ -384,6 +431,8 @@ export default {
                     },
                     {
                       name: "先华",
+                      gender: 1,
+                      addr: "张家界市慈利县江垭林场",
                       children: [
                         {
                           name: "傲",
@@ -401,6 +450,7 @@ export default {
                 },
                 {
                   name: "承月",
+                  gender: 1,
                   children: [
                     {
                       name: "庭"
@@ -413,11 +463,11 @@ export default {
                   children: [
                     {
                       name: "寇学兵",
-                      gender: 1,
+                      gender: 1
                     },
                     {
                       name: "寇金云",
-                      gender: 2,
+                      gender: 2
                     }
                   ]
                 },
@@ -427,16 +477,16 @@ export default {
                   children: [
                     {
                       name: "杨明",
-                      gender: 2,
+                      gender: 2
                     },
                     {
                       name: "杨妹",
-                      gender: 2,
+                      gender: 2
                     },
                     {
                       name: "杨敏",
-                      gender: 1,
-                    },
+                      gender: 1
+                    }
                   ]
                 },
                 {
@@ -459,12 +509,15 @@ export default {
               ]
             },
             {
-              name: "芳蕃"
+              name: "芳蕃",
+              gender: 1
             }
           ]
         }
       ]
     };
+
+    const data = this.filterNode(data_origin);
 
     myChart.hideLoading();
 
@@ -526,7 +579,20 @@ export default {
       myChart.resize();
     });
   },
-  methods: {}
+  methods: {
+    filterNode: function (node) {
+      const result = { ...node };
+      if (node.gender) {
+        result.itemStyle = {
+          color: ["", "blue", "red"][node.gender]
+        };
+      }
+      if (node.children) {
+        result.children = result.children.map((node) => this.filterNode(node));
+      }
+      return result;
+    }
+  }
 };
 </script>
 
