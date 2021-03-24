@@ -409,7 +409,17 @@ export default {
                 },
                 {
                   name: "桃霞",
-                  gender: 2
+                  gender: 2,
+                  children: [
+                    {
+                      name: "寇学兵",
+                      gender: 1,
+                    },
+                    {
+                      name: "寇金云",
+                      gender: 2,
+                    }
+                  ]
                 },
                 {
                   name: "银霞",
