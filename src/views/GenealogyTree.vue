@@ -18,7 +18,7 @@ export default {
     myChart.showLoading();
 
     var data = {
-      name: "延高2",
+      name: "延高",
       children: [
         {
           name: "祚湘",
