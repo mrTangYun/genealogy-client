@@ -3,7 +3,6 @@
 </template>
 
 <script>
-import Vue from "vue";
 const echarts = window.echarts;
 export default {
   name: "OrganizationChart",
