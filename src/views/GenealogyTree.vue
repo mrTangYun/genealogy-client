@@ -465,7 +465,9 @@ export default {
                   name: "唐承礼",
                   gender: 1,
                   isDead: true,
-
+                  mate: {
+                    name: "李珍翠"
+                  },
                   children: [
                     {
                       name: "唐先明",
@@ -513,12 +515,19 @@ export default {
                       gender: 1,
                       addr: "江垭五里堆三湾",
                       bday: "1969-11",
+                      mate: {
+                        name: "黎秋浓"
+                      },
                       children: [
                         {
                           name: "唐帅",
                           gender: 1,
                           addr: "江垭五里堆三湾",
                           bday: "1993-09"
+                        },
+                        {
+                          name: "唐悦萍",
+                          gender: 2
                         }
                       ]
                     },
