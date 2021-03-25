@@ -1,28 +1,31 @@
 <template>
-  <div>
+  <PullRefresh v-model="isLoading" @refresh="onRefresh">
     <Search
       v-model="keywords"
       background="#2A363B"
       placeholder="请输入搜索关键词"
       @search="onSearch"
       @cancel="onCancel"
-      @clear="onClear"
-    />
-    <PullRefresh v-model="isLoading" @refresh="onRefresh">
-      <div class="genealogyNode" ref="space"></div>
-    </PullRefresh>
-  </div>
+      :show-action="!!keywords.length"
+    >
+      <template #action>
+        <div class="btn-show-all" size="small" @click="onCancel">全部</div>
+      </template>
+    </Search>
+    <div class="genealogyNode" ref="space"></div>
+  </PullRefresh>
 </template>
 
 <script>
-import { PullRefresh, Search } from "vant";
+import { PullRefresh, Search, Button } from "vant";
 import data_origin from "../data";
 import { v4 as uuidv4 } from "uuid";
 const echarts = window.echarts;
 export default {
   components: {
     PullRefresh,
-    Search
+    Search,
+    Button
   },
   name: "OrganizationChart",
 
@@ -235,5 +238,14 @@ export default {
 .genealogyNode {
   height: 100vh;
   // background: red;
+}
+.btn-show-all {
+  background: #fff;
+  font-size: 0.875em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1em;
+  border-radius: 0.5em;
 }
 </style>
