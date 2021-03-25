@@ -997,22 +997,33 @@ export default {
 
     myChart.setOption(
       (option = {
+        backgroundColor: "#2A363B",
         label: {
           formatter: function(params) {
             /* 这里 `params.data` 引用的是 `series[0].data[index]`，里面包含着“额外的数据” */
             // console.log(params.data.name);
-            return params.data.name.replace("唐", "");
+            let result = "";
+            const { name } = params.data;
+            if ("唐芳𨥭" === name) {
+              return ["芳", "𨥭"].join("\n");
+            }
+            result = name;
+            if (name.length > 2) {
+              result = params.data.name.replace("唐", "");
+            }
+
+            return result.split("").join("\n");
           }
         },
         tooltip: {
-          position: [0, 0],
+          // position: [0, 0],
           padding: 2,
           trigger: "item",
           triggerOn: "mousemove",
 
           formatter: function(params) {
             /* 这里 `params.data` 引用的是 `series[0].data[index]`，里面包含着“额外的数据” */
-            console.log(params.data);
+            // console.log(params.data);
             const { name, mate, addr, bday, dday } = params.data;
             const result = [];
             let life = "";
@@ -1077,14 +1088,28 @@ export default {
     });
   },
   methods: {
+    // filterName: function(name) {
+    //   const dirs = ["𨥭"];
+    //   let result = "";
+
+    //   if (dirs.some(w => name.indexOf(w) > -1)) {
+
+    //   }
+    //   result = name;
+    //   if (name.length > 2) {
+    //     result = params.data.name.replace("唐", "");
+    //   }
+
+    //   return result.split("").join("\n");
+    // },
     filterNode: function(node) {
       const result = { ...node };
       if (node.gender) {
         result.itemStyle = {
-          color: ["", "#42b983", "red"][node.gender]
+          color: ["", "#99B898", "#E84A5F"][node.gender]
         };
         result.lineStyle = {
-          color: ["", "#42b983", "red"][node.gender]
+          color: ["", "#99B898", "#E84A5F"][node.gender]
         };
       }
       if (node.children) {
