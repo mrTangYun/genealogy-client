@@ -305,16 +305,20 @@ export default {
                   gender: 1,
                   children: [
                     {
-                      name: "唐红军"
+                      name: "唐红军",
+                      gender: 1
                     },
                     {
-                      name: "唐小兵"
+                      name: "唐红兵",
+                      gender: 1
                     },
                     {
-                      name: "唐小亚"
+                      name: "唐小千",
+                      gender: 2
                     },
                     {
-                      name: "唐小干"
+                      name: "唐小静",
+                      gender: 2
                     }
                   ]
                 }
