@@ -240,12 +240,13 @@ export default {
   // background: red;
 }
 .btn-show-all {
-  background: #fff;
+  background: #ff847c;
   font-size: 0.875em;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 1em;
-  border-radius: 0.5em;
+  border-radius: 2px;
+  color: #fff;
 }
 </style>
