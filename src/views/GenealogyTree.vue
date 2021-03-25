@@ -791,7 +791,7 @@ export default {
                       gender: 1,
                       addr: "张家界市慈利县江垭林场",
                       mate: {
-                        name: "张桃英"
+                        name: "张秀英"
                       },
                       bday: "1969-10",
                       children: [
@@ -807,7 +807,7 @@ export default {
                       name: "唐先莉",
                       gender: 2,
                       mate: {
-                        name: "杨雨铣"
+                        name: "杜吉文"
                       }
                     }
                   ]
