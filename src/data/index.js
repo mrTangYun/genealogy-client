@@ -217,7 +217,7 @@ const data_origin = {
                         },
                         {
                           name: "唐小",
-                          gender: 1,
+                          gender: 2,
                         }
                       ]
                     }
