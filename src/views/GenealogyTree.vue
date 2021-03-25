@@ -1,14 +1,22 @@
 <template>
-  <div class="genealogyNode" ref="space"></div>
+  <PullRefresh v-model="isLoading" @refresh="onRefresh">
+    <div class="genealogyNode" ref="space"></div>
+  </PullRefresh>
 </template>
 
 <script>
+import { PullRefresh } from "vant";
 const echarts = window.echarts;
 export default {
+  components: {
+    PullRefresh
+  },
   name: "OrganizationChart",
 
   data() {
-    return {};
+    return {
+      isLoading: false
+    };
   },
   mounted: function() {
     const chartDom = this.$refs.space;
@@ -1102,20 +1110,12 @@ export default {
     });
   },
   methods: {
-    // filterName: function(name) {
-    //   const dirs = ["𨥭"];
-    //   let result = "";
-
-    //   if (dirs.some(w => name.indexOf(w) > -1)) {
-
-    //   }
-    //   result = name;
-    //   if (name.length > 2) {
-    //     result = params.data.name.replace("唐", "");
-    //   }
-
-    //   return result.split("").join("\n");
-    // },
+    onRefresh: function() {
+      const { origin, pathname, hash } = window.location;
+      window.location.href = `${origin}${pathname}?t=${Math.ceil(
+        Math.random() * 100000000
+      )}/${hash}`;
+    },
     filterNode: function(node) {
       const result = { ...node };
       if (node.gender) {
