@@ -303,6 +303,9 @@ export default {
                 {
                   name: "唐承吉",
                   gender: 1,
+                  mate: {
+                    name: "张春奇"
+                  },
                   children: [
                     {
                       name: "唐红军",
