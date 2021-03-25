@@ -191,7 +191,7 @@ export default {
             }
           ]
         },
-        
+
         {
           name: "唐祚湘",
           gender: 1,
@@ -529,7 +529,28 @@ export default {
               name: "唐芳森",
               gender: 1,
               isDead: true,
+              mate: {
+                name: "罗永霞"
+              },
               children: [
+                {
+                  name: "唐梅香",
+                  gender: 2,
+                  isDead: true,
+                  mate: {
+                    name: "李业后"
+                  },
+                  children: [
+                    {
+                      name: "李泽忠",
+                      gender: 1
+                    },
+                    {
+                      name: "李泽兴",
+                      gender: 1
+                    }
+                  ]
+                },
                 {
                   name: "唐承均",
                   gender: 1,
@@ -967,7 +988,7 @@ export default {
               ]
             }
           ]
-        },
+        }
       ]
     };
 
@@ -981,7 +1002,7 @@ export default {
           formatter: function (params) {
             /* 这里 `params.data` 引用的是 `series[0].data[index]`，里面包含着“额外的数据” */
             // console.log(params.data.name);
-            return params.data.name.replace('唐', '');
+            return params.data.name.replace("唐", "");
           }
         },
         tooltip: {
@@ -997,9 +1018,12 @@ export default {
             //               bday
             const { name, mate, addr, bday } = params.data;
             const result = [];
-            result.push(name+ (bday ? (' ' +dayjs(new dayjs()).diff(bday, "y") + "岁") : ''));
+            result.push(
+              name +
+                (bday ? " " + dayjs(new dayjs()).diff(bday, "y") + "岁" : "")
+            );
             if (addr) {
-              result.push(addr );
+              result.push(addr);
             }
             if (mate) {
               result.push("配偶: " + mate.name);
