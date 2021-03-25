@@ -4,7 +4,6 @@
 
 <script>
 const echarts = window.echarts;
-import dayjs from "dayjs";
 export default {
   name: "OrganizationChart",
 
@@ -1082,10 +1081,10 @@ export default {
       const result = { ...node };
       if (node.gender) {
         result.itemStyle = {
-          color: ["", "blue", "red"][node.gender]
+          color: ["", "#42b983", "red"][node.gender]
         };
         result.lineStyle = {
-          color: ["", "blue", "red"][node.gender]
+          color: ["", "#42b983", "red"][node.gender]
         };
       }
       if (node.children) {
