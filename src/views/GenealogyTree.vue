@@ -196,7 +196,7 @@ export default {
           gender: 1,
           children: [
             {
-              name: "唐芳钦",
+              name: "唐芳清",
               gender: 1,
               children: [
                 {
@@ -204,12 +204,12 @@ export default {
                   gender: 1
                 },
                 {
-                  name: "唐承红",
+                  name: "唐承洪",
                   gender: 1,
 
                   children: [
                     {
-                      name: "唐先益",
+                      name: "唐先义",
                       gender: 1,
                       mate: {
                         name: "庹春梅"
@@ -230,8 +230,16 @@ export default {
                       ]
                     },
                     {
+                      name: "唐先美",
+                      gender: 2
+                    },
+                    {
                       name: "唐先军",
                       gender: 1
+                    },
+                    {
+                      name: "唐先菊",
+                      gender: 2
                     },
                     {
                       name: "唐先高",
@@ -254,14 +262,6 @@ export default {
                           bday: "1987-03"
                         }
                       ]
-                    },
-                    {
-                      name: "唐先枚",
-                      gender: 2
-                    },
-                    {
-                      name: "唐先菊",
-                      gender: 2
                     }
                   ]
                 },
