@@ -126,7 +126,10 @@ export default {
         series: [
           {
             type: "tree",
-
+            emphasis: {
+              focus: "ancestor",
+              blurScope: "coordinateSystem"
+            },
             data: [data],
 
             left: "2%",
