@@ -11,7 +11,7 @@ export default {
   data() {
     return {};
   },
-  mounted: function () {
+  mounted: function() {
     const chartDom = this.$refs.space;
     const myChart = echarts.init(chartDom);
     let option;
@@ -999,7 +999,7 @@ export default {
     myChart.setOption(
       (option = {
         label: {
-          formatter: function (params) {
+          formatter: function(params) {
             /* 这里 `params.data` 引用的是 `series[0].data[index]`，里面包含着“额外的数据” */
             // console.log(params.data.name);
             return params.data.name.replace("唐", "");
@@ -1011,17 +1011,19 @@ export default {
           trigger: "item",
           triggerOn: "mousemove",
 
-          formatter: function (params) {
+          formatter: function(params) {
             /* 这里 `params.data` 引用的是 `series[0].data[index]`，里面包含着“额外的数据” */
             console.log(params.data);
-            // addr: "张家界市慈利县江垭镇灰塘坪",
-            //               bday
-            const { name, mate, addr, bday } = params.data;
+            const { name, mate, addr, bday, dday } = params.data;
             const result = [];
-            result.push(
-              name +
-                (bday ? " " + dayjs(new dayjs()).diff(bday, "y") + "岁" : "")
-            );
+            let life = "";
+            if (bday) {
+              life = `(生${bday})`;
+              if (dday) {
+                life = `(${bday}-${dday})`;
+              }
+            }
+            result.push(name + (bday ? " " + life : ""));
             if (addr) {
               result.push(addr);
             }
@@ -1042,14 +1044,10 @@ export default {
             right: "2%",
             top: "8%",
             bottom: "20%",
-
             symbol: "emptyCircle",
             symbolSize: 15,
-
             orient: "vertical",
-
             expandAndCollapse: true,
-
             label: {
               position: "top",
               rotate: 0,
@@ -1080,7 +1078,7 @@ export default {
     });
   },
   methods: {
-    filterNode: function (node) {
+    filterNode: function(node) {
       const result = { ...node };
       if (node.gender) {
         result.itemStyle = {
@@ -1091,7 +1089,7 @@ export default {
         };
       }
       if (node.children) {
-        result.children = result.children.map((node) => this.filterNode(node));
+        result.children = result.children.map(node => this.filterNode(node));
       }
       return result;
     }
