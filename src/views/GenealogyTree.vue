@@ -294,7 +294,21 @@ export default {
                 },
                 {
                   name: "唐承吉",
-                  gender: 1
+                  gender: 1,
+                  children: [
+                    {
+                      name: "唐红军"
+                    },
+                    {
+                      name: "唐小兵"
+                    },
+                    {
+                      name: "唐小亚"
+                    },
+                    {
+                      name: "唐小干"
+                    }
+                  ]
                 }
               ]
             },
