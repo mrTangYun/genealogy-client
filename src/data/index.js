@@ -194,6 +194,7 @@ const data_origin = {
                 {
                   name: "唐先义",
                   gender: 1,
+                  bday: "1946",
                   mate: {
                     name: "庹春梅"
                   },
@@ -214,23 +215,28 @@ const data_origin = {
                 },
                 {
                   name: "唐先美",
-                  gender: 2
+                  gender: 2,
+                  bday: "19469"
                 },
                 {
                   name: "唐先军",
-                  gender: 1
+                  gender: 1,
+                  bday: "1951"
                 },
                 {
                   name: "唐先菊",
-                  gender: 2
+                  gender: 2,
+                  bday: "1954"
                 },
                 {
                   name: "唐先高",
-                  gender: 1
+                  gender: 1,
+                  bday: "1958"
                 },
                 {
                   name: "唐先云",
                   gender: 1,
+                  bday: "1962",
                   children: [
                     {
                       name: "唐汇斌",
