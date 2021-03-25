@@ -1018,9 +1018,9 @@ export default {
             const result = [];
             let life = "";
             if (bday) {
-              life = `(生${bday})`;
+              life = `(生于${bday})`;
               if (dday) {
-                life = `(${bday}-${dday})`;
+                life = `(${bday}~${dday})`;
               }
             }
             result.push(name + (bday ? " " + life : ""));
