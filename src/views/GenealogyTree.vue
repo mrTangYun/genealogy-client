@@ -36,7 +36,8 @@ export default {
       myChart: null,
       flatData: [],
       searchResultData: [],
-      data_origin_withId: null
+      data_origin_withId: null,
+      me: null
     };
   },
   computed: {
@@ -100,7 +101,7 @@ export default {
           trigger: "item",
           triggerOn: "mousemove",
 
-          formatter: function(params) {
+          formatter: params => {
             /* 这里 `params.data` 引用的是 `series[0].data[index]`，里面包含着“额外的数据” */
             // console.log({ ...params.data });
             const { name, mate, addr, bday, dday } = params.data;
@@ -198,12 +199,22 @@ export default {
       const result = { ...node };
       if (!node.id) {
         result.id = uuidv4();
-        (result.path = [...(parentPath || []), result.id]),
-          this.flatData.push({
-            id: result.id,
-            name: result.name,
-            path: result.path
-          });
+        result.path = [...(parentPath || []), result.id];
+        const user = {
+          id: result.id,
+          name: result.name,
+          gender: result.gender,
+          path: result.path,
+          index: this.flatData.length
+        };
+        // window.flatData = this.flatData;
+        // if (result.name === "唐云") {
+        //   window.me = user;
+        // }
+        // if (result.name === "唐景怡") {
+        //   window.ta = user;
+        // }
+        this.flatData.push(user);
       }
       if (this.searchResultData.length) {
         if (
