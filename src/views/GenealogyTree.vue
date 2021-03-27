@@ -133,7 +133,7 @@ export default {
 
   data() {
     return {
-      showSlider: true,
+      showSlider: false,
       myNameInput: "",
       isLoading: false,
       keywordsTmp: "",
@@ -454,9 +454,7 @@ export default {
           index: this.flatData.length
         };
         // window.flatData = this.flatData;
-        if (result.name === "唐云") {
-          this.me = user;
-        }
+       
 
         this.flatData.push(user);
       }
