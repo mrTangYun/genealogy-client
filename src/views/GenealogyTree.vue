@@ -359,11 +359,14 @@ export default {
             if (mate) {
               result.push("配偶: " + mate.name);
             }
-            const relationship = this.getRelationship(this.me, params.data);
+            if (this.me) {
+              const relationship = this.getRelationship(this.me, params.data);
 
-            if (relationship) {
-              result.push("称呼: " + relationship);
+              if (relationship) {
+                result.push("称呼: " + relationship);
+              }
             }
+
             // var prevPrice = params.data;
             return result.join("<br />");
           }
@@ -454,7 +457,6 @@ export default {
           index: this.flatData.length
         };
         // window.flatData = this.flatData;
-       
 
         this.flatData.push(user);
       }
