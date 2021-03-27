@@ -18,9 +18,9 @@
           >
             全部
           </div>
-          <div class="btn-show-all btn" size="small" @click="showSlider = true">
+          <!-- <div class="btn-show-all btn" size="small" @click="showSlider = true">
             {{ me ? me.name : "设置" }}
-          </div>
+          </div> -->
         </div>
       </template>
     </Search>
