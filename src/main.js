@@ -2,6 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
+// import vconsole from 'vconsole'
 import { NavBar, Button, List, Cell, Popup,Field, CellGroup, Icon } from 'vant';
 
 import VueApollo from "vue-apollo";
@@ -23,6 +24,7 @@ Vue.use(Button);
 Vue.use(VueApollo);
 Vue.config.productionTip = false;
 
+// const _v = new vconsole()
 const apolloProvider = new VueApollo({
   defaultClient: apolloClient
 });

@@ -18,9 +18,9 @@
           >
             全部
           </div>
-          <!-- <div class="btn-show-all btn" size="small" @click="showSlider = true">
+          <div class="btn-show-all btn" size="small" @click="showSlider = true">
             {{ me ? me.name : "设置" }}
-          </div> -->
+          </div>
         </div>
       </template>
     </Search>
@@ -65,10 +65,7 @@
                   <div v-if="!!item.addr" class="addr">{{ item.addr }}</div>
                 </div>
                 <van-button
-                  @click="
-                    me = item;
-                    showSlider = false;
-                    myNameInput = '';
+                  @click="setCurrentUser(item)
                   "
                   color="#FF847C"
                   round
@@ -103,10 +100,7 @@
           </div>
         </div>
         <van-button
-          @click="
-            me = null;
-            myNameInput = '';
-          "
+          @click="clickResetCurrentUser"
           block
           color="#FF847C"
           size="big"
@@ -188,15 +182,14 @@ export default {
     const chartDom = this.$refs.space;
     this.myChart = echarts.init(chartDom);
     let option;
-
     this.myChart.showLoading();
-
-    this.myChart.hideLoading();
-
-    // this.myChart.setOption((option = this.generateOption()));
     option = this.generateOption();
-
     option && this.myChart.setOption(option);
+    this.myChart.hideLoading();
+    if (window.localStorage.getItem("currentId")) {
+      console.log(this.flatData);
+      this.me = this.findUserById(window.localStorage.getItem("currentId"));
+    }
     window.addEventListener("resize", this.onResizeHandler);
   },
 
@@ -204,6 +197,18 @@ export default {
     window.removeEventListener("resize", this.onResizeHandler);
   },
   methods: {
+    setCurrentUser(user) {
+      this.me = user;
+      this.showSlider = false;
+      this.myNameInput = '';
+
+      window.localStorage.setItem("currentId", user.id);
+    },
+    clickResetCurrentUser() {
+      this.me = null;
+      this.myNameInput = '';
+      window.localStorage.removeItem("currentId");
+    },
     findUserById(id) {
       const index = this.flatData.findIndex(({ id: _id }) => _id === id);
       if (index > -1) {
@@ -385,7 +390,7 @@ export default {
             top: "8%",
             bottom: "20%",
             symbol: "emptyCircle",
-            symbolSize: 15,
+            symbolSize: 12,
             orient: "vertical",
             expandAndCollapse: !this.searchResultData.length,
             label: {
@@ -393,7 +398,7 @@ export default {
               rotate: 0,
               verticalAlign: "middle",
               align: "right",
-              fontSize: 19
+              fontSize: 15
             },
 
             leaves: {
@@ -448,7 +453,7 @@ export default {
     filterNode: function (node, parentPath) {
       const result = { ...node };
       if (!node.path) {
-        result.id = uuidv4();
+        // result.id = uuidv4();
         result.path = [...(parentPath || []), result.id];
         const user = {
           ...result,
@@ -490,9 +495,9 @@ export default {
     },
     filterNode2: function (node, parentPath) {
       const result = { ...node };
-      if (!node.path) {
-        result.id = uuidv4();
-      }
+      // if (!node.path) {
+      //   result.id = uuidv4();
+      // }
 
       if (node.children) {
         result.children = result.children.map((node) => this.filterNode2(node));
@@ -538,7 +543,7 @@ export default {
 .people {
   text-align: left;
   .name {
-    font-size: 2em;
+    font-size: 1.5em;
     padding-right: 0.3em;
   }
   .item {
